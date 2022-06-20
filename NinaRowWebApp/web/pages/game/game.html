@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../../common/global.css">
+    <link rel="stylesheet" type="text/css" href="game.css">
+    <script src="../../common/jquery-2.0.3.min.js"></script>
+    <script src="../../common/context-path-helper.js"></script>
+    <title>Nina Row</title>
+</head>
+<body id="mainBody">
+<script src="../../common/forward.js"></script>
+
+<div id="headerDiv" class="rootDivs">
+    <div id="leaveDiv">
+        <span id="leaveLink" class="activeLink">Leave Game</span>
+    </div>
+    <div id="gameDetailsDiv">
+        <div id="gameTitleDiv">
+            <span>Game Title: </span>
+            <span id="gameTitleText"></span>
+        </div>
+        <br/>
+        <div id="gameVariantDiv">
+            <span>Game variant: </span><span id="gameVariantText"></span>
+        </div>
+        <div id="gameTargetDiv">
+            <span>Game target: </span><span id="gameTargetText"></span>
+        </div>
+    </div>
+    <div id="gameStatusDiv">
+        <span id="gameStatusText"></span>
+        <br/>
+        <span id="playerCountText"></span><span> players in game</span>
+    </div>
+</div>
+
+<div id="userPromptAndInfoDiv" class="rootDivs">
+    <div id="userPromptDiv">
+        <span id="userPromptText">UserName: It's your turn!</span>
+    </div>
+    <div id="userInfoDiv">
+        <span>Logged in as </span>
+        <span id="userNameText" style="color:blue; font-size: 15px"></span>
+        <span> using the </span>
+        <div id="userDiscDiv"></div>
+        <span> discs </span>
+    </div>
+</div>
+*/
+
+
+
+<div id="mainDiv" class="rootDivs">
+    <div id="invisibleDivForSpacing"></div>
+    <div id="boardDiv">
+        <table id="boardTable">
+        </table>
+    </div>
+
+    <div id="playersListDiv">
+    </div>
+</div>
+
+<div id="overPageMask"></div>
+
+<div id="endGameDiv">
+    <div id="endGameInnerDiv">
+        <span id="endGameText"></span>
+        <img id="endGameImg" src="#" align="middle">
+    </div>
+</div>
+
+<div id="updatesDiv">
+    <span id="updatesText"></span>
+</div>
+
+<div id="countdownPromptDiv">
+    <div id="countdownTextDiv">
+        <span>Returning to lobby in </span>
+        <span id="countdownTimerText">5</span>
+        <span>...</span>
+    </div>
+</div>
+
+<script src="constants.js"></script>
+<script src="game.js"></script>
+</body>
+</html>

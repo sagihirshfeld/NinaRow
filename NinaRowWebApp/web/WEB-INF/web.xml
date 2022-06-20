@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>servlets.LoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/pages/login/login</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/LoginServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+    <servlet-name>UserStatusServlet</servlet-name>
+    <servlet-class>servlets.UserStatusServlet</servlet-class>
+</servlet>
+    <servlet-mapping>
+        <servlet-name>UserStatusServlet</servlet-name>
+        <url-pattern>/UserStatusServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>LogoutServlet</servlet-name>
+        <servlet-class>servlets.LogoutServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LogoutServlet</servlet-name>
+        <url-pattern>/LogoutServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>LoggedUsersServlet</servlet-name>
+        <servlet-class>servlets.LoggedUsersServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoggedUsersServlet</servlet-name>
+        <url-pattern>/LoggedUsersServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>UploadXmlServlet</servlet-name>
+        <servlet-class>servlets.UploadXmlServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UploadXmlServlet</servlet-name>
+        <url-pattern>/UploadXmlServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>GamesListServlet</servlet-name>
+        <servlet-class>servlets.GamesListServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>GamesListServlet</servlet-name>
+        <url-pattern>/GamesListServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>JoinGameServlet</servlet-name>
+        <servlet-class>servlets.JoinGameServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>JoinGameServlet</servlet-name>
+        <url-pattern>/JoinGameServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>GameDataServlet</servlet-name>
+        <servlet-class>servlets.GameDataServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>GameDataServlet</servlet-name>
+        <url-pattern>/GameDataServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>PlayersListServlet</servlet-name>
+        <servlet-class>servlets.PlayersListServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>PlayersListServlet</servlet-name>
+        <url-pattern>/PlayersListServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>GameInProgressStateServlet</servlet-name>
+        <servlet-class>servlets.GameInProgressStateServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>GameInProgressStateServlet</servlet-name>
+        <url-pattern>/GameInProgressStateServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+    <servlet-name>MakeMoveServlet</servlet-name>
+    <servlet-class>servlets.MakeMoveServlet</servlet-class>
+</servlet>
+    <servlet-mapping>
+        <servlet-name>MakeMoveServlet</servlet-name>
+        <url-pattern>/MakeMoveServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ResetGameEngineServlet</servlet-name>
+        <servlet-class>servlets.ResetGameEngineServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ResetGameEngineServlet</servlet-name>
+        <url-pattern>/ResetGameEngineServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>LeaveGameServlet</servlet-name>
+        <servlet-class>servlets.LeaveGameServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LeaveGameServlet</servlet-name>
+        <url-pattern>/LeaveGameServlet</url-pattern>
+    </servlet-mapping>
+
+
+</web-app>
+

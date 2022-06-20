@@ -1,0 +1,323 @@
+.rootDivs{
+    min-width: 829px;
+    position: relative;
+}
+
+#headerDiv{
+    background-color: lightgray;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#leaveDiv {
+    display: inline-block;
+    margin-left: 5px;
+    margin-top: 10px;
+}
+
+#gameDetailsDiv {
+    display: inline-block;
+    width: 300px;
+}
+
+#gameStatusDiv {
+    display: inline-block;
+    text-align: center;
+    margin-right: 5px;
+}
+
+
+.activeLink {
+    cursor: pointer;
+    color: blue;
+    text-decoration: underline;
+    float: left;
+}
+
+#gameTitleDiv {
+    display: inline-block;
+    text-align: center;
+    width:260px;
+    text-decoration: underline;
+}
+
+#gameVariantDiv {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+#gameTargetDiv {
+    display: inline-block;
+}
+
+#mainDiv {
+    display: flex;
+    justify-content: space-between;
+}
+
+#boardDiv {
+    flex-shrink: 0;
+}
+
+#userPromptAndInfoDiv{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#userPromptDiv {
+    width: 220px;
+    visibility: hidden;
+}
+
+#userInfoDiv {
+    display: flex;
+    align-items: center;
+    margin-right: 45px;
+}
+
+#userInfoDiv > span {
+    margin-left: 5px;
+}
+
+#userInfoDiv:first-child {
+    margin-left: 0;
+}
+
+.playPrompt {
+    border-left: 6px solid #008000;
+    background-color: #00FA9A;
+}
+
+.waitPrompt {
+    border-left: 6px solid #FF4500;
+    background-color: #FF8C00;
+}
+
+#playersListDiv {
+    display: table;
+    border-bottom: solid;
+    margin-left: 20px;
+    margin-top: 16px;
+    flex-shrink: 0;
+}
+
+.playerDetailsDiv {
+    padding: 4px 8px 8px;
+    border-top: solid;
+    border-left: solid;
+    border-right: solid;
+    background-color: #6F9FD8
+}
+
+.nameAndTypeDiv {
+    display: inline-block;
+    margin-right: 20px;
+    padding-right: 10px;
+    border-right: groove #00008091;
+    width: 175px;
+}
+
+.colorAndTurnsDiv {
+    display: inline-block;
+}
+
+.turnHolder {
+    background-color: #F7D73E;
+    font-weight: bold;
+}
+
+.disc {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+/* discs which are within the playersListDiv */
+div > .disc {
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    margin-left: 50px;
+}
+
+#infoDisc {
+    margin-left: 5px;
+}
+
+/* button td's */
+thead td, tfoot td {
+    background-color: transparent;
+    border: none;
+    position: relative;
+}
+
+.popinButton {
+    bottom: 0;
+}
+
+.popoutButton{
+    top: 0;
+}
+
+.gameButton {
+    text-align: center;
+    width: 55px;
+    position: absolute;
+    left: 5%;
+    border-radius: 4px;
+    color: white;
+    background-color: #2E4A62;
+    border: 2px solid #2E4A62;
+    -webkit-transition-duration: 0.4s;
+}
+
+.gameButton:hover:enabled {
+    color: black;
+    background-color: white;
+}
+
+td {
+    width:  65px;
+    height: 65px;
+    border: 1px solid black;
+    background-color: #3f69aa
+}
+
+#overPageMask {
+    position: fixed;
+    z-index: 1;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: black;
+    opacity: 0.5;
+    visibility: hidden;
+}
+
+#endGameDiv {
+    position: fixed;
+    z-index: 2;
+    margin-left: auto;
+    margin-right: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #F0F8FF;
+    width: 325px;
+    height: 150px;
+    visibility: hidden;
+    opacity: 0.8;
+}
+
+#endGameInnerDiv {
+    position: absolute;
+    margin: 0 auto auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 330px;
+    height: 50px;
+    padding: 10px;
+    font-size: 30px;
+    text-align: center;
+}
+
+#scoreID{
+    font-size: 30px;
+    color: #F0F8FF;
+}
+
+#endGameImg {
+    display: block;
+    margin-left: 40%;
+}
+
+#endGameText {
+    font-size: 30px;
+    text-align: center;
+}
+
+#updatesDiv {
+    position: fixed;
+    z-index: 2;
+    margin: auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-color: #F0F8FF;
+    width: 375px;
+    height: 70px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#updatesDiv {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s linear, opacity 1.5s linear;
+}
+
+#countdownPromptDiv {
+    position: fixed;
+    z-index: 2;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #F0F8FF;
+    width: 375px;
+    height: 70px;
+    visibility: hidden;
+    opacity: 0.8;
+}
+
+#countdownTextDiv{
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 375px;
+    height: 50px;
+    padding: 10px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.red {
+    background-color: #bd3d3a;
+}
+
+.blue {
+    background-color: #007FFF;
+}
+
+.green {
+    background-color: #006e6d;
+}
+
+.black {
+    background-color: black;
+    border: 1px solid #5E5E5E;
+}
+
+.silver {
+    background-color: #DDDDDD
+}
+
+.purple {
+    background-color: #6B5B95;
+}
+

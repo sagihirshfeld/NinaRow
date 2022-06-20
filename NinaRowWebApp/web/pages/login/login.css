@@ -1,0 +1,28 @@
+body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+#mainDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+#title {
+    font-size: 60px;
+}
+
+#loginForm {
+    text-align: left;
+}
+
+
+
+#usernameTextbox {
+    width: 190px;
+}

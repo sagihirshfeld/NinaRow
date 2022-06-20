@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" type="text/css" href="../../common/global.css">
+    <link rel="stylesheet" type="text/css" href="lobby.css">
+    <script src="../../common/jquery-2.0.3.min.js"></script>
+    <script src="../../common/context-path-helper.js"></script>
+    <title>Nina Row</title>
+</head>
+<body id="mainBody">
+    <script src="../../common/forward.js"></script>
+
+    <div id="headerDiv" class="rootDivs">
+        <div id="logoutDiv">
+            <span id="logoutLink">Logout</span>
+        </div>
+        <div id="userDetailsDiv">
+            <span id="userDetailsText"></span>
+        </div>
+    </div>
+
+    <div id="titleDiv" class="rootDivs">
+        <span id="titleText">Games Lobby</span>
+    </div>
+
+    <div id="uploadGameDiv">
+        <form id="uploadGameForm" action="uploadGame" enctype="multipart/form-data" method="POST">
+            <span id="uploadGameText">Upload Game:</span>
+            <input type="file" id="uploadFileInput" name="uploadFileInput" accept=".xml" value="Choose File">
+            <input type="submit" id="uploadFileSubmit" style="display: none">
+        </form>
+    </div>
+
+    <div id="mainDiv" class="rootDivs">
+        <div id="gamesDiv">
+            <table id="gamesTable">
+                <thead>
+                <tr>
+                    <th>Game's Title</th>
+                    <th>Creator</th>
+                    <th>Board Size</th>
+                    <th>Streak Target</th>
+                    <th>Variant</th>
+                    <th>Players' Count</th>
+                    <th>Status</th>
+                    <th></th>
+                </tr>
+                </thead>
+                <tbody id="gamesTableBody"></tbody>
+            </table>
+        </div>
+        <div id="loggedUsersDiv">
+            <span id="loggedUsersTitle">Logged in players:</span>
+            <ul id="usersList">
+            </ul>
+        </div>
+    </div>
+
+    <script src="constants.js"></script>
+    <script src="lobby.js"></script>
+</body>
+</html>

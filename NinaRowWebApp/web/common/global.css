@@ -1,0 +1,21 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+input[type="button"], input[type="submit"] , button{
+     cursor: pointer;
+}
+
+input[type="button"]:disabled, input[type="submit"]:disabled , button:disabled{
+    opacity: 0.65;
+    cursor: not-allowed;
+}
+
+body {
+    background-color: #7FDBFF;
+}
+
+

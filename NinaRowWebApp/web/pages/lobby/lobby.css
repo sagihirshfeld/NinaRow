@@ -1,0 +1,131 @@
+.rootDivs{
+    min-width: 679px;
+    position: relative;
+}
+
+#headerDiv{
+    position: relative;
+    background-color: lightgray;
+    height: 32px;
+}
+
+#logoutLink{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    transform: translate(0%, -50%);
+
+    cursor: pointer;
+    color: blue;
+    text-decoration: underline;
+}
+
+#logoutLink:hover{
+    text-shadow: 1px 1px 1px #696969;
+}
+
+#userDetailsText{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: 0 -50% 0 0;
+    transform: translate(-50%, -50%)
+}
+
+#titleDiv{
+    text-align: center;
+    border-bottom: 1px solid #000000;
+}
+
+#titleText {
+    font-size: 45px;
+}
+
+#uploadGameDiv{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#mainDiv{
+    display: flex;
+    justify-content: space-between;
+}
+
+#gamesDiv{
+    margin-bottom: 10px;
+    margin-right: 50px;
+}
+
+#loggedUsersDiv{
+    text-align: center;
+    width: 260px;
+    white-space: nowrap;
+
+}
+
+#loggedUsersTitle{
+    border-bottom: solid;
+    margin-left: 25px;
+}
+
+
+/* Table design was inspired by https://codepen.io/alassetter/full/cyrfB/ */
+
+#gamesTable {
+    text-align: center;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 5px;
+}
+
+th {
+    color: #D5DDE5;
+    background: #1b1e24;
+    font-weight: 100;
+    border-bottom: 4px solid #9ea7af;
+    border-right: 1px solid #9ea7af;
+}
+
+td {
+    background: white;
+    font-weight: 300;
+    border-right: 1px solid #C1C3D1;
+}
+
+tr:nth-child(odd) td:not(.buttonTds) {
+    background: #EBEBEB;
+}
+
+th:first-child {
+    border-top-left-radius: 3px;
+}
+
+th:nth-child(7){
+    border-top-right-radius: 3px;
+    border-right: none;
+}
+
+tr td:nth-child(7) {
+    border-right: none;
+}
+
+tr:last-child td:nth-child(7) {
+    border-bottom-right-radius: 3px;
+}
+
+tr:last-child td:first-child {
+    border-bottom-left-radius: 3px;
+}
+
+th:last-child {
+    display: none;
+}
+
+.buttonTds {
+    border: none;
+    text-align: left;
+    background-color: transparent;
+}
